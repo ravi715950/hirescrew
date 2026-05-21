@@ -39,7 +39,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-2 shrink-0">
           <div className="w-9 h-9 rounded-full bg-brand flex items-center justify-center overflow-hidden">
             <Image
-              src="/logo/logo-white.svg"
+              src="/logo/hirescrew-logo.PNG"
               alt="HiresCrew logo"
               width={36}
               height={36}

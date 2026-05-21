@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(mkdir -p \"c:/Users/Ravindra Kumar/Desktop/hirescrew/public/logo\")",
+      "Bash(mkdir -p \"c:/Users/Ravindra Kumar/Desktop/hirescrew/components/layout\")",
+      "Bash(mkdir -p \"c:/Users/Ravindra Kumar/Desktop/hirescrew/components/sections\")",
+      "Bash(mkdir -p \"c:/Users/Ravindra Kumar/Desktop/hirescrew/components/forms\")",
+      "Bash(mkdir -p \"c:/Users/Ravindra Kumar/Desktop/hirescrew/content\")",
+      "Bash(npx next *)",
+      "Bash(node -e \"const l = require\\('c:/Users/Ravindra Kumar/Desktop/hirescrew/node_modules/lucide-react'\\); const keys = Object.keys\\(l\\); console.log\\(keys.filter\\(k => k.toLowerCase\\(\\).includes\\('x'\\) || k.toLowerCase\\(\\).includes\\('twitter'\\) || k.toLowerCase\\(\\).includes\\('social'\\)\\).join\\('\\\\n'\\)\\)\")",
+      "Bash(node -e \"const l = require\\('c:/Users/Ravindra Kumar/Desktop/hirescrew/node_modules/lucide-react'\\); const keys = Object.keys\\(l\\); console.log\\(keys.filter\\(k => k.toLowerCase\\(\\).includes\\('linkedin'\\) || k === 'X' || k === 'XIcon'\\).join\\('\\\\n'\\)\\)\")",
+      "Bash(node -e \"const l = require\\('c:/Users/Ravindra Kumar/Desktop/hirescrew/node_modules/lucide-react'\\); const keys = Object.keys\\(l\\); console.log\\(keys.filter\\(k => !k.startsWith\\('Lucide'\\) && !k.endsWith\\('Icon'\\) && !k.startsWith\\('lucide'\\)\\).slice\\(0,10\\).join\\('\\\\n'\\)\\)\")",
+      "Bash(node -e \"const l = require\\('c:/Users/Ravindra Kumar/Desktop/hirescrew/node_modules/lucide-react'\\); const keys = Object.keys\\(l\\); console.log\\(keys.filter\\(k => k.toLowerCase\\(\\).includes\\('share'\\) || k.toLowerCase\\(\\).includes\\('link'\\) || k.toLowerCase\\(\\).includes\\('social'\\) || k.toLowerCase\\(\\).includes\\('globe'\\)\\).filter\\(k => !k.startsWith\\('Lucide'\\) && !k.endsWith\\('Icon'\\)\\).join\\('\\\\n'\\)\\)\")",
+      "PowerShell(cd \"c:\\\\Users\\\\Ravindra Kumar\\\\Desktop\\\\hirescrew\"; $files = @\\(\"app/contact/page.tsx\",\"components/layout/Footer.tsx\",\"app/candidates/page.tsx\",\"app/employers/page.tsx\",\"app/services/[slug]/page.tsx\",\"app/services/page.tsx\",\"app/about/page.tsx\",\"components/sections/CtaBand.tsx\",\"components/sections/DualPathBand.tsx\",\"components/sections/Process.tsx\",\"components/sections/Specialties.tsx\",\"components/sections/ServicesGrid.tsx\",\"components/sections/TrustStrip.tsx\",\"components/sections/Hero.tsx\",\"components/layout/Navbar.tsx\"\\); foreach \\($f in $files\\) { \\(Get-Content $f -Raw\\) -replace 'max-w-\\\\[1200px\\\\]', 'max-w-300' | Set-Content $f -Encoding utf8 }; echo \"Done\")",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git branch *)",
+      "Bash(git remote *)"
+    ]
+  }
+}

@@ -55,7 +55,7 @@ export default function RootLayout({
               description:
                 "Specialist recruitment firm providing Executive Search, Software Product Hiring, RPO Solutions, and Startup Recruitment.",
               foundingDate: "2025",
-              logo: "/logo/logo-white.svg",
+              logo: "/logo/hirescrew-logo.PNG",
               url: "https://hirescrew.com",
             }),
           }}
