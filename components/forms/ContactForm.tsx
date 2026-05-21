@@ -46,7 +46,7 @@ export default function ContactForm() {
         </div>
         <h3 className="text-xl font-bold text-text-primary mb-2">Message received!</h3>
         <p className="text-text-muted mb-6">
-          We'll get back to you within one business day.
+          We&apos;ll get back to you within one business day.
         </p>
         <button
           onClick={() => setStatus("idle")}

@@ -96,14 +96,6 @@ export default function Navbar() {
 
                   {servicesOpen && (
                     <div className="absolute left-0 top-full mt-3 w-72 overflow-hidden rounded-3xl border border-border bg-bg-surface p-2 shadow-[0_24px_50px_rgba(14,27,17,0.14)]">
-                      <div className="border-b border-border px-3 pb-3 pt-2">
-                        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-text-muted">
-                          What we do
-                        </p>
-                        <p className="mt-1 text-sm font-medium text-text-secondary">
-                          Specialized hiring support for high-growth teams.
-                        </p>
-                      </div>
 
                       <div className="mt-2 flex flex-col gap-1">
                         {item.children.map((child) => (

@@ -39,29 +39,29 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const organizationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "HiresCrew",
+    description:
+      "Specialist recruitment firm providing Executive Search, Software Product Hiring, RPO Solutions, and Startup Recruitment.",
+    foundingDate: "2025",
+    logo: "/logo/logo.svg",
+    url: "https://hirescrew.com",
+  };
+
   return (
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <head>
+      <body className="min-h-full flex flex-col bg-bg-base text-text-primary">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "HiresCrew",
-              description:
-                "Specialist recruitment firm providing Executive Search, Software Product Hiring, RPO Solutions, and Startup Recruitment.",
-              foundingDate: "2025",
-              logo: "/logo/logo.svg",
-              url: "https://hirescrew.com",
-            }),
+            __html: JSON.stringify(organizationJsonLd).replace(/</g, "\\u003c"),
           }}
         />
-      </head>
-      <body className="min-h-full flex flex-col bg-bg-base text-text-primary">
         <Navbar />
         <div className="flex-1">{children}</div>
         <Footer />

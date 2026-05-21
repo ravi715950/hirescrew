@@ -1,6 +1,6 @@
 import { NextRequest } from "next/server";
 import { contactSchema } from "@/lib/validation";
-import { sendContactNotification } from "@/lib/email";
+import { createEnquiry } from "@/lib/enquiries";
 
 export async function POST(request: NextRequest) {
   let body: unknown;
@@ -19,8 +19,8 @@ export async function POST(request: NextRequest) {
   }
 
   try {
-    await sendContactNotification(result.data);
-    return Response.json({ ok: true });
+    const enquiryId = await createEnquiry(result.data);
+    return Response.json({ ok: true, enquiryId: enquiryId.toString() });
   } catch (err) {
     console.error("Contact form error:", err);
     return Response.json({ ok: false, error: "Failed to send message" }, { status: 500 });
