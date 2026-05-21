@@ -44,13 +44,13 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 px-3 pt-3 sm:px-4">
-      <div className="mx-auto max-w-300">
+    <header className="border-b border-border bg-bg-base">
+      <div className="mx-auto max-w-300 px-3 sm:px-4">
         <nav
-          className={`flex min-h-20 items-center justify-between rounded-[28px] border px-4 py-3 shadow-[0_20px_60px_rgba(14,27,17,0.08)] backdrop-blur transition-all duration-300 md:px-6 ${
+          className={`flex min-h-20 items-center justify-between px-4 py-3 transition-all duration-300 md:px-6 ${
             scrolled
-              ? "border-border-strong bg-bg-base/95"
-              : "border-border bg-bg-base/88"
+              ? "bg-bg-base/95"
+              : "bg-transparent"
           }`}
         >
           <Link href="/" onClick={closeMenus} className="flex shrink-0 items-center gap-3 pr-3">
@@ -161,7 +161,7 @@ export default function Navbar() {
         </nav>
 
         {menuOpen && (
-          <div className="mt-3 rounded-[28px] border border-border bg-bg-surface p-3 shadow-[0_24px_50px_rgba(14,27,17,0.12)] md:hidden">
+          <div className="border-t border-border bg-bg-surface p-3 md:hidden">
             <div className="mb-3 rounded-2xl bg-bg-subtle px-4 py-3">
               <p className="text-sm font-semibold text-text-primary">
                 Build stronger teams with focused recruitment support.
